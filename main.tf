@@ -70,9 +70,10 @@ resource "random_string" "lb_id" {
   special = false
 }
 
-module "s3_bucket" {
-  source      = "bofa/s3-bucket-rks/aws"
-  bucket_name = "my-bucket"
+module "s3-bucket-rks" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-rks/aws"
+  version = "1.1.0"
+  bucket_name= "rks-05-06-26"
 }
 
 module "elb_http" {
