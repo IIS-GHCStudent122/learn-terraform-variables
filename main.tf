@@ -1,12 +1,10 @@
-terraform {
-  /*
-   cloud {
+terraform { 
+  /*  cloud {
     organization = "policy-as-code-training"
     workspaces {
       name = "tf-vault-qa-Gio-20260603"
     }
-  */
-  }
+   }  */
   required_providers {
     aws = {
       source = "hashicorp/aws"
