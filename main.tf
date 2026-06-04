@@ -125,8 +125,8 @@ module "ec2_instances" {
     environment = "development"
   }
 }
-module "s3_bucket" {
-  source  = "app.terraform.io/policy-as-code-training/s3-bucket-gio-060326/aws"
-  version = "1.0.0"
-  bucket_name = "my-bucket"
+module "s3-bucket-gio-060326" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-gio-060326/AWS"
+  version = "1.1.0"
+  # insert required variables here
 }
