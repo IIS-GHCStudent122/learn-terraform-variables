@@ -126,7 +126,7 @@ module "ec2_instances" {
   }
 }
 module "s3-bucket-gio-060326" {
-  source  = "app.terraform.io/policy-as-code-training/s3-bucket-gio-060326/AWS"
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-gio-060326/aws"
   version = "1.1.0"
-  # insert required variables here
+  bucket_name = "gio-s3-060326"
 }
